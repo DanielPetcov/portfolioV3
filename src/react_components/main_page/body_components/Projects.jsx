@@ -10,7 +10,7 @@ export default function Projects(){
         to_do_img, //img src
         ["Description:", 
         "Basic To-Do-App, with some beautiful animations.",
-        "The technologies that has been used, are:"],  // description
+        "The technologies that have been used, are:"],  // description
         ["HTML", "CSS", "JavaScript", "React"]], // core technologies
         // ob2: ["To Do App", //title
         // "https://to-do-app-theta-teal.vercel.app/", //link
