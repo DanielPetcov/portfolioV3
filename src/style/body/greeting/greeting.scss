@@ -68,7 +68,11 @@
 
 @media screen and (max-width: 425px) {
     .greeting-container{
-        font-size: .9rem;
+        font-size: 1.4rem;
+
+        .greeting{
+            padding-left: 3em;
+        }
 
         h1{
             line-height: 3.4rem;
