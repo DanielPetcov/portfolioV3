@@ -1,0 +1,67 @@
+.greeting-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 700px));
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.8rem;
+}
+
+.greeting {
+  grid-column: span(1, 2);
+  display: grid;
+  align-items: center;
+  padding-left: 3.2em;
+}
+.greeting h1 {
+  font-weight: 900;
+  line-height: 5rem;
+}
+.greeting span {
+  color: #1E63FF;
+}
+
+.greeting-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3em;
+}
+.greeting-img .frame {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  max-width: 500px;
+  background-image: url("../../../assets/me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 900px) {
+  .greeting-container {
+    font-size: 1.3rem;
+    grid-template-columns: 2fr 1fr;
+  }
+  .greeting {
+    padding-left: 5em;
+  }
+  .greeting h1 {
+    line-height: 4rem;
+  }
+  .greeting-img .frame {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .greeting-container {
+    font-size: 0.9rem;
+  }
+  .greeting-container h1 {
+    line-height: 3.4rem;
+  }
+  .greeting-container .frame {
+    width: 12rem;
+    height: 12rem;
+  }
+}/*# sourceMappingURL=greeting.css.map */

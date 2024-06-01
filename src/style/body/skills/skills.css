@@ -1,0 +1,30 @@
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #FCFCFC;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.skills-container {
+  background-color: #1E63FF;
+  min-height: 100vh;
+  width: 100%;
+  color: #FCFCFC;
+}
+
+.skills {
+  padding: 3rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
+.skills h4 {
+  margin-bottom: 0.4rem;
+}
+.skills ul {
+  padding-left: 2rem;
+}
+.skills .skill:not(:last-child) {
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=skills.css.map */

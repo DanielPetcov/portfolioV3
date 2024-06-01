@@ -1,0 +1,50 @@
+@import '../generic/colors';
+
+.footer{
+    width: 100%;
+    background-color: $secondary_color;
+    border-top: 3px solid $primary_color;
+    display: flex;
+    padding: 0 6em;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary_color;
+
+    .credits{
+        font-size: .6rem;
+    }
+}
+
+.contacts ul{
+    display: flex;
+    font-size: 1.4rem;
+
+    li{
+        list-style: none;
+        margin-left: .8rem;
+    }
+
+    a{
+        color: $primary_color;
+        text-decoration: none;
+        padding: .6em;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .footer{
+        display: block;
+        text-align: center;
+    
+        .credits{
+            margin-bottom: 2rem;
+        }
+
+        .contacts ul{
+            margin-top: .2rem;
+            justify-content: center;
+            
+        }
+            
+    }
+}

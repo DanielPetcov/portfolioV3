@@ -1,0 +1,116 @@
+@import '../generic/colors';
+
+.navbar-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    padding: 1rem 0;
+    grid-template-columns: minmax(0, 1400px);
+    justify-content: center;
+    background-color: $secondary_color;
+    z-index: 1;
+}
+
+.navbar{
+    height: 100%;
+    width: 100%;
+    background-color: $secondary_color;
+    display: flex;
+    padding: 0 6em;
+    justify-content: space-between;
+    align-items: center;
+
+    .burger-lines{
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: $primary_color;
+        font-weight: 500;
+    }
+
+    .logo{
+        a{
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+
+    .links ul{
+        display: flex;
+
+        li{
+            list-style: none;
+            margin-left: 1.4rem;
+        }
+
+        a{
+            padding: .6em 1em;
+            border-radius: 10px;
+            transition: all .2s ease;   
+            &:hover{
+                background-color: $primary_color;
+                color: $accent_color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 525px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em 0;
+
+        .burger-lines{
+            display: block;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.2rem;
+            padding: .4rem 4rem;
+            color: white;
+        }
+
+        .links{
+            display: none;
+    
+            ul{
+                display: block;
+                width: 100%;
+                background-color: $secondary_color;
+
+                li{
+                    margin-left: 0;
+                    min-width: 100%;
+                    
+                    a{
+                        display: block;
+                        border-radius: 0;
+                        min-width: 100%;
+                        padding: 1em 0 1em 4em;
+
+                        &:hover{
+                            background-color: $primary_color;
+                            color: $accent_color;
+                            transition: all .2s ease;
+                        }
+                    }
+                }
+            }
+        }
+
+        .active{
+            display: block;
+            width: 100%;
+            z-index: 2;
+        }
+    }
+    
+
+
+    .logo{
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FCFCFC;
+  display: grid;
+  grid-template-rows: 4rem 1fr 4rem;
+  grid-template-areas: "navbar" "body" "footer";
+}
+
+.navbar-container {
+  grid-area: navbar;
+}
+
+.body {
+  grid-area: body;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 10px;
+  }
+  .app {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=app.css.map */
