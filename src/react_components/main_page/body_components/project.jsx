@@ -3,7 +3,7 @@ export default function Project(props){
         <div className="project-title">{props.title}</div>
         <div className="project-about">
             <div className="project-link">
-                <a href={props.link}>
+                <a href={props.link} target="_blank">
                     <img src={props.img_src} alt="img" />
                 </a>
             </div>
