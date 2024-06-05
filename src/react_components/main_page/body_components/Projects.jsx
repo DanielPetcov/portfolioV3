@@ -1,6 +1,7 @@
 import '../../../style/body/projects/projects.css'
 import Project from './project'
 import to_do_img from '../../../assets/todo.png'
+import weather_img from '../../../assets/weatherpage.png'
 
 export default function Projects(){
     // HERE YOU CAN ADD NEW PROJECTS, just try to respect the order
@@ -14,7 +15,7 @@ export default function Projects(){
         ["HTML", "SCSS", "JavaScript", "React"]], // core technologies
         ob2: ["Weather App", //title
         "https://weather-app-xakr.vercel.app/", //link
-        "src/assets/weatherpage.png", //img src
+        weather_img, //img src
         ["Description:", 
         "Weather App that displays the curent weather of a city and it's forecast for 5 days.",
         "The technologies that have been used, are:"],  // description
