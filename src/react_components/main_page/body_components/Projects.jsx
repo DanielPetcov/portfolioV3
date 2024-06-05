@@ -11,14 +11,14 @@ export default function Projects(){
         ["Description:", 
         "Basic To-Do-App, with some beautiful animations.",
         "The technologies that have been used, are:"],  // description
-        ["HTML", "CSS", "JavaScript", "React"]], // core technologies
-        // ob2: ["To Do App", //title
-        // "https://to-do-app-theta-teal.vercel.app/", //link
-        // "src/assets/todo.png", //img src
-        // ["Description:", 
-        // "Basic To-Do-App, with some beautiful animations.",
-        // "The technologies that has been used, are:"],  // description
-        // ["HTML", "CSS", "JavaScript", "React"]], // core technologies
+        ["HTML", "SCSS", "JavaScript", "React"]], // core technologies
+        ob2: ["Weather App", //title
+        "https://weather-app-xakr.vercel.app/", //link
+        "src/assets/weatherpage.png", //img src
+        ["Description:", 
+        "Weather App that displays the curent weather of a city and it's forecast for 5 days.",
+        "The technologies that have been used, are:"],  // description
+        ["HTML", "SCSS", "TypeScript", "React", "Openweathermap API"]], // core technologies
     }
 
     const renderProjects = (projects_obj) =>{

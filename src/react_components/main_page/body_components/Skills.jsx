@@ -9,7 +9,9 @@ export default function Skills(){
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>SCSS</li>
                     <li>JavaScript</li>
+                    <li>TypeScript</li>
                     <li>React</li>
                     <li>Node.js</li>
                 </ul>
